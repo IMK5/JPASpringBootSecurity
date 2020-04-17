@@ -1,2 +1,7 @@
-"# JPASpringBootSecurity"  git init git add README.md git commit -m "first commit" git remote add origin https://github.com/IMK5/JPASpringBootSecurity.git git push -u origin master
-"# JPASpringBootSecurity" 
+# Using JPA and MySQL with Spring Security
+* How to setup JPA authentication with Spring Security and mySql from scratch
+* Dependencies:
+  - Spring web  
+  - Spring security
+  - Spring data JPA
+  - MySQL driver
