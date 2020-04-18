@@ -3,10 +3,10 @@ package imk.tn.JPASpringBootSecurity;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class JpaSpringBootSecurityApplicationTests {
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 
