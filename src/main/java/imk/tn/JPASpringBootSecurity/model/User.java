@@ -31,24 +31,12 @@ public class User implements java.io.Serializable {
 	@Column(name = "password")
 	private String password;
 
-	
-	/*
-	 * @ManyToMany(fetch = FetchType.LAZY , cascade = { CascadeType.PERSIST,
-	 * CascadeType.MERGE, })
-	 * 
-	 * 
-	 * @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"),
-	 * inverseJoinColumns = @JoinColumn(name = "user_role_id") )
-	 */
-	
-	@OneToMany(mappedBy="user", cascade={CascadeType.ALL})
+	@OneToMany(mappedBy = "user", cascade = { CascadeType.ALL })
 	private Collection<Role> roles;
 
 	public Long getId() {
 		return id;
 	}
-
-	
 
 	public String getPassword() {
 		return password;
@@ -66,13 +54,9 @@ public class User implements java.io.Serializable {
 		this.roles = roles;
 	}
 
-
-
 	public String getUserName() {
 		return userName;
 	}
-
-
 
 	public void setUserName(String userName) {
 		this.userName = userName;
